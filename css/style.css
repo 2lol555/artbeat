@@ -25,20 +25,17 @@
   color: rgb(255, 0, 120);
 }
 
+.logoheading {
+  height: 70px;
+  margin: 0 0 30px 0;
+}
+
 .vlnovka-top {
   margin: 0 0 30px 0;
   height: 75px;
 }
 
-.no-side-pad {
-  padding-left: 0;
-  padding-right: 0;
-}
 
-.logoheading {
-  height: 70px;
-  margin: 0 0 30px 0;
-}
 
 .header {
   height: 650px;
