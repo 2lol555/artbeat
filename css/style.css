@@ -112,6 +112,38 @@
     }
 }
 
+@media (max-width: 395px) {
+    .logoheading {
+        height: 60px;
+        margin: 7px 0 10px 30px;
+    }
+    .vlnovka-top {
+        margin: 7px 30px 10px 0;
+        height: 60px;
+    }
+    .navigation {
+        height: 125px;
+        text-align: center;
+    }
+    .navlink-div {
+        padding: 10px 0 0 0;
+    }
+    .navlinks {
+        font-size: 1rem;
+        margin: 0 1px 0 1px;
+        font-weight: 200;
+    }
+    .header {
+        height: 100%;
+    }
+    .cover {
+        width: 100%;
+    }
+    .logomain {
+        margin: 250px 0 150px 0;
+    }
+}
+
 hr {
     margin: 2rem auto 1.5rem auto;
     border-style: dotted;
