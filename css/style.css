@@ -1,7 +1,5 @@
 .navigation {
     background-color: rgba(0, 0, 0, 0.8);
-    border-style: solid;
-    border-width: 3px 0 3px 0;
     position: fixed;
     z-index: 500;
     width: 100%;
@@ -17,6 +15,7 @@
     font-weight: 300;
     font-family: 'Ubuntu', sans-serif;
     display: inline;
+    text-transform: uppercase;
 }
 
 .navlink-div {
@@ -29,12 +28,12 @@
 
 .logoheading {
     height: 70px;
-    margin: 0 0 30px 0;
+    margin: 5px 0 30px 0;
 }
 
 .vlnovka-top {
-    margin: 0 0 30px 0;
-    height: 75px;
+    margin: 10px 0 30px 0;
+    height: 60px;
 }
 
 .no-side-pad {
@@ -77,7 +76,7 @@
 
 .o-nas {
     background-color: white;
-    height: 500px;
+    height: 5000px;
 }
 
 @media (max-width: 991px) {
@@ -126,7 +125,7 @@
         text-align: center;
     }
     .navlink-div {
-        padding: 10px 0 0 0;
+        padding: 15px 0 0 0;
     }
     .navlinks {
         font-size: 1rem;
