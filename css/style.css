@@ -1,5 +1,3 @@
-@media (max-width: 992px) {}
-
 .navigation {
     background-color: rgba(0, 0, 0, 0.8);
     border-style: solid;
@@ -21,6 +19,16 @@
 
 .navlink-div {
     padding: 15px 0 0 0;
+}
+
+@media (max-width: 991px) {
+    .navigation {
+        height: 160px;
+        text-align: center;
+    }
+    .navlink-div {
+        padding: 0 0 0 0;
+    }
 }
 
 .slash {
