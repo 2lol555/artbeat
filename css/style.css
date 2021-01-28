@@ -21,16 +21,6 @@
     padding: 15px 0 0 0;
 }
 
-@media (max-width: 991px) {
-    .navigation {
-        height: 160px;
-        text-align: center;
-    }
-    .navlink-div {
-        padding: 0 0 0 0;
-    }
-}
-
 .slash {
     color: rgb(255, 0, 120);
 }
@@ -48,11 +38,6 @@
 .no-side-pad {
     padding-left: 0;
     padding-right: 0;
-}
-
-.logoheading {
-    height: 70px;
-    margin: 0 0 30px 0;
 }
 
 .header {
@@ -83,6 +68,29 @@
 
 .pagedivide {
     margin: 2rem auto 2rem auto;
+}
+
+@media (max-width: 991px) {
+    .logoheading {
+        height: 70px;
+        margin: 0 0 20px 50px;
+    }
+    .vlnovka-top {
+        margin: 0 50px 20px 0;
+        height: 75px;
+    }
+    .navigation {
+        height: 150px;
+        text-align: center;
+    }
+    .navlink-div {
+        padding: 0 0 0 0;
+    }
+    .navlinks {
+        font-size: 1.3rem;
+        margin: 0 3px 0 3px;
+        font-weight: 200;
+    }
 }
 
 hr {
