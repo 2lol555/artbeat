@@ -48,13 +48,11 @@
     background-image: url('/img/bg.webp');
     background-position: top, center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-height: 700px;
+    max-height: 750px;
 }
 
 .logomain {
-    margin-top: 200px;
+    margin-top: 150px;
     max-width: 80vw;
     width: 80vw;
     max-width: 600px;
@@ -132,7 +130,10 @@ p {
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 480px) {
+    .logoheading {
+        margin: 7px 0 10px 30px;
+    }
     .vlnovka-top {
         margin: 7px 30px 10px 0;
         height: 60px;
@@ -142,7 +143,7 @@ p {
         text-align: center;
     }
     .navlink-div {
-        padding: 15px 0 0 0;
+        padding: 5px 0 0 0;
     }
     .navlinks {
         font-size: 0.94rem;
