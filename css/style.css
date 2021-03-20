@@ -1,3 +1,8 @@
+body, html{
+    margin: 0;
+    overflow-x: hidden;
+}
+
 .navigation {
     background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
