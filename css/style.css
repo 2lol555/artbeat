@@ -128,8 +128,10 @@ p {
 }
 
 .clen{
+    border: white solid 5px;
+
     margin: 0 auto 20px;
-    max-width: 40%;
+    max-width: 800px;
     position: relative;
     background-color: rgb(255, 220, 236);
     border-radius: 10px;
