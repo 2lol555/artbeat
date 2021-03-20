@@ -123,9 +123,8 @@ p {
     font-family: 'Ubuntu', sans-serif;
 }
 
-.o-clenoch > h2{
+.o-clenoch h2{
     text-align: center;
-
 }
 
 .clen{
@@ -136,6 +135,9 @@ p {
     border-radius: 10px;
     padding-left: 10px;
     padding-bottom: 8px;
+}
+.clen h3{
+    margin-top: 5px;
 }
 
 .clen p{
