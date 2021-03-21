@@ -23,6 +23,7 @@ body, html{
     float: left;
 }
 
+
 .navigation {
     background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
@@ -114,6 +115,7 @@ h2 {
     padding-top: 5px;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
 }
 
 p {
@@ -130,7 +132,8 @@ p {
     border: white solid 5px;
 
     margin: 0 auto 20px;
-    max-width: 800px;
+    max-width: 920px;
+    min-height: 300px;
     position: relative;
     background-color: rgb(255, 220, 236);
     border-radius: 10px;
@@ -139,6 +142,36 @@ p {
 }
 .clen h3{
     margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.clen em{
+    color: rgb(70, 70, 70);
+    margin-bottom: 0px;
+    font-style: normal;
+}
+
+.clen .job-description{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(255, 0, 120);
+    font-size: 1rem;
+    display: inline-block;
+    left: 67px;
+    top: -7px;
+}
+
+.clen em:first-of-type{
+    position: relative;
+    
+}
+.clen em::before{
+    content: " | ";
+}
+.clen em:first-of-type::before{
+    content: "";
 }
 
 .clen p{
@@ -176,6 +209,8 @@ p {
 .clen img{
     border-radius: 50%;
     height: 200px;
+    width: 200px;
+
     position: relative;
     top: 10px;
     margin-right: 20px;
