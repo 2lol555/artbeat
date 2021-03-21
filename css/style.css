@@ -42,6 +42,10 @@ body, html{
     display: inline;
     text-transform: uppercase;
 }
+.navlinks:hover{
+    color: rgb(255, 0, 120);
+    text-decoration: none;
+}
 
 .navlink-div {
     padding: 20px 0 0 0;
@@ -59,11 +63,6 @@ body, html{
 .vlnovka-top {
     margin: 10px 0 30px 0;
     height: 60px;
-}
-
-.no-side-pad {
-    padding-left: 0;
-    padding-right: 0;
 }
 
 .header {
