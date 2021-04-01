@@ -128,6 +128,10 @@ p {
     text-align: center;
 }
 
+.wrapper{
+    margin-right: 20px;
+}
+
 .clen{
     border: white solid 5px;
 
@@ -159,7 +163,6 @@ p {
     color: rgb(255, 0, 120);
     font-size: 1rem;
     display: inline-block;
-    left: 67px;
     top: -7px;
 }
 
@@ -180,17 +183,13 @@ p {
 }
 
 .clen a{
+    margin-top: -10px;
     margin-right: 5px;
     color: rgb(255, 0, 120);
 }
 
 .clen a:first-of-type{
     clear: left;
-    margin-left: 34.5px;
-}
-
-.clen a:last-of-type{
-    margin-right: 54.5px;
 }
 
 .clen a:hover{
@@ -201,10 +200,6 @@ p {
     clear: both;
 }
 
-.clen .kontakt-ikonky{
-    width: 220px;
-    text-align: center;
-}
 
 .clen img{
     border-radius: 50%;
@@ -213,7 +208,6 @@ p {
 
     position: relative;
     top: 10px;
-    margin-right: 20px;
     margin-bottom: 20px;
     border: rgb(255, 0, 120) solid 5px;
 }
