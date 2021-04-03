@@ -228,6 +228,28 @@ p {
     color: #222;
 }
 
+#consent-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    min-height: 50px;
+}
+#consent-popup a{
+    color: rgb(255, 0, 120);
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#suhlas-button {
+    margin: 10px 0;
+}
+
 @media (max-width: 991px) {
     .logoheading {
         height: 70px;
