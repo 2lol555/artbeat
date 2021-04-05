@@ -1,6 +1,7 @@
 $primary-color: rgb(255, 0, 120);
 $sans-serif: 'Ubuntu', sans-serif;
 
+
 body, html {
     margin: 0;
     overflow-x: hidden;
@@ -138,6 +139,8 @@ p {
     margin-right: 20px;
 }
 
+
+// Člen styling
 .clen {
     border: white solid 5px;
     margin: 0 auto 20px;
@@ -151,73 +154,73 @@ p {
     padding-bottom: 10px;
     padding-top: 10px;
     text-align: justify;
-}
 
-.clen h3 {
-    margin-top: 5px;
-    text-transform: uppercase;
-    font-weight: 600;
-    display: inline-block;
-}
+    h3 {
+        margin-top: 5px;
+        text-transform: uppercase;
+        font-weight: 600;
+        display: inline-block;
+    }
 
-.clen em {
-    color: rgb(70, 70, 70);
-    margin-bottom: 0px;
-    font-style: normal;
-}
+    em {
+        color: rgb(70, 70, 70);
+        margin-bottom: 0px;
+        font-style: normal;
+    }
 
-.clen .job-description {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: $primary-color;
-    font-size: 1rem;
-    display: inline-block;
-    top: -7px;
-}
+    .job-description {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $primary-color;
+        font-size: 1rem;
+        display: inline-block;
+        top: -7px;
+    }
 
-.clen em:first-of-type {
-    position: relative;
-}
+    em:first-of-type {
+        position: relative;
+    }
 
-.clen em::before {
-    content: " | ";
-}
+    em::before {
+        content: " | ";
+    }
 
-.clen em:first-of-type::before {
-    content: "";
-}
+    em:first-of-type::before {
+        content: "";
+    }
 
-.clen p {
-    width: 100%;
-    margin-bottom: 10px;
-}
+    p {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 
-.clen a {
-    margin-top: -10px;
-    margin-right: 5px;
-    color: $primary-color;
-}
+    a {
+        margin-top: -10px;
+        margin-right: 5px;
+        color: $primary-color;
+    }
 
-.clen a:first-of-type {
-    clear: left;
-}
+    a:first-of-type {
+        clear: left;
+    }
 
-.clen a:hover {
-    color: rgb(187, 0, 87);
+    a:hover {
+        color: rgb(187, 0, 87);
+    }
+
+    img {
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        top: 10px;
+        margin-bottom: 20px;
+        border: $primary-color solid 5px;
+    }
 }
 
 .clear {
     clear: both;
-}
-
-.clen img {
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    position: relative;
-    top: 10px;
-    margin-bottom: 20px;
-    border: $primary-color solid 5px;
 }
 
 .footer {
