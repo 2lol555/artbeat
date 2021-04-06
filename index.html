@@ -48,8 +48,8 @@
     <!-- Ubuntu !-->
 
     <!--js load-->
-    <script src="js/script.js"></script>
-    <script src="js/gdpr.js"></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/gdpr.js" defer></script>
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -264,9 +264,17 @@
             <a href="gdpr.html" class="footerlink">Zásady ochrany osobných údajov</a>
     </div>
 
-    <div id="consent-popup" class ="hidden">
-        <p>Vyjadrite prosím súhlas s podmienkami <a href="gdpr.html">Ochrany osobných údajov</a></p>
-        <button id="suhlas-button" type="button" class="btn btn-success">Súhlasím</button>
+    <div id="consent-popup" class="hidden">
+
+        <img src="img/samo.jpg">
+        <h1>Ahoj, tu technik Samo.</h1>
+        <p> Potrebujeme tvoj súhlas na ukladanie súborov cookies a spracúvanie osobných údajov.</p>
+        <p>O spracúvaní údajov sa dozvieš na tomto linku: </p>
+        <a href="gdpr.html">Ochrana osobných údajov</a>
+        <div class="consent-buttons">
+            <button id="suhlas-button" type="button" class="btn btn-success btn-sm">Súhlasím</button>
+            <button id="nesuhlas-button" type="button" class="btn btn-secondary btn-sm">Nesúhlasím</button>
+        </div>
     </div>
 </body>
 </html>
