@@ -65,10 +65,9 @@ body, html {
 
 .navlink-div {
     padding: 20px 0 0 0;
-}
-
-.slash {
-    color: $primary-color;
+    p {
+        color: $primary-color;
+    }
 }
 
 .logoheading {
@@ -89,17 +88,17 @@ body, html {
     background-position: top, center;
     background-attachment: fixed;
     max-height: 750px;
+
+    img {
+        margin-top: 150px;
+        max-width: 80vw;
+        width: 80vw;
+        max-width: 600px;
+        max-height: 400px;
+    }
 }
 
-.logomain {
-    margin-top: 150px;
-    max-width: 80vw;
-    width: 80vw;
-    max-width: 600px;
-    max-height: 400px;
-}
-
-.o-oz {
+#o-nas {
     background-color: white;
     padding-top: 30px;
 }
@@ -219,6 +218,8 @@ p {
     }
 }
 
+
+
 .clear {
     clear: both;
 }
@@ -290,6 +291,21 @@ p {
         width: 80%;
     }
 }
+@media (max-width: 590px) {
+    .wrapper{
+        display: block;
+        width: 100%;
+    }
+    .clen{
+        text-align: center;
+    }
+    .clen article{
+        text-align: justify;
+    }
+}
+
+
+
 
 @media (max-width: 480px) {
     .logoheading {
@@ -318,5 +334,10 @@ p {
     }
     p {
         width: 90%;
+    }
+
+    .clen{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
