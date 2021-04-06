@@ -3,6 +3,8 @@ body, html {
 }
 
 body {
+	padding: 0 10px;
+	width: 90%;
 	max-width: 760px;
 	margin: auto;
 	color: #222;
@@ -24,6 +26,13 @@ ol {
 
 li {
 	display: block;
+	padding-bottom: 10px;
+	padding-top: 20px;
+}
+.main-list ol li{
+	padding-top: 0px;
+	padding-bottom: 10px;
+
 }
 
 li:before {
@@ -33,4 +42,10 @@ li:before {
 
 .main-list>li {
 	font-weight: bold;
+}
+
+@media (max-width: 480px) {
+	ol{
+		padding: 0;
+	}
 }
