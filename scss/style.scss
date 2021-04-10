@@ -259,6 +259,8 @@ p {
     text-align: justify;
     min-height: 50px;
     font-size: 0.8rem;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 
@@ -345,8 +347,22 @@ p {
     }
 }
 
+@media (max-width: 540px) {
 
+    #consent-popup img,
+    #consent-popup h1 {
+        display: none;
+    }
 
+    #consent-popup {
+        text-align: center;
+    }
+
+    #consent-popup p:first-of-type {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}
 
 @media (max-width: 480px) {
     .logoheading {
@@ -382,17 +398,4 @@ p {
         padding-right: 10px;
     }
 
-    #consent-popup img,
-    #consent-popup h1 {
-        display: none;
-    }
-
-    #consent-popup{
-        text-align: center;
-    }
-
-    #consent-popup p:first-of-type{
-        font-size: 1rem;
-        margin-bottom: 1rem;
-    }
 }
