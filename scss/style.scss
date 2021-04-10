@@ -53,9 +53,12 @@ body, html {
     font-size: 1.5rem;
     font-weight: 300;
     font-family: $sans-serif;
+    text-decoration: none;
 
     display: inline;
     text-transform: uppercase;
+
+    transition: all ease 0.2s;
 }
 
 .navlinks:hover {
@@ -216,8 +219,14 @@ p {
         margin-bottom: 20px;
         border: $primary-color solid 5px;
     }
+
+    transition: all 0.25s ease;
 }
 
+.clen:hover,
+.clen:focus {
+    transform: scale(1.02);
+}
 
 
 .clear {
@@ -251,6 +260,7 @@ p {
     min-height: 50px;
     font-size: 0.8rem;
 }
+
 
 #consent-popup p {
     margin: 0;
