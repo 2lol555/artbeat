@@ -5,6 +5,8 @@ $sans-serif: 'Ubuntu', sans-serif;
 body, html {
     margin: 0;
     overflow-x: hidden;
+    font-style: $sans-serif;
+
 }
 
 .group:before, .group:after {
@@ -104,6 +106,26 @@ body, html {
 #o-nas {
     background-color: white;
     padding-top: 30px;
+
+    max-width: 920px;
+    margin: auto;
+    text-align: justify;
+
+    p{
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    h3{
+        margin-bottom: 20px;
+        margin-top: 30px;
+        font-weight: 600;
+    }
+
+    em{
+        color: darken($color: $primary-color, $amount: 5);
+    }
 }
 
 hr {
@@ -135,6 +157,10 @@ p {
 
 .o-clenoch h2 {
     text-align: center;
+}
+
+.o-clenoch{
+    padding-top: 25px;
 }
 
 .wrapper {
@@ -377,6 +403,10 @@ p {
     }
     p {
         width: 80%;
+    }
+
+    #o-nas{
+        padding: 20px;
     }
 }
 
