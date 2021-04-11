@@ -233,6 +233,48 @@ p {
     clear: both;
 }
 
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+
+    max-width: 760px;
+    margin: auto;
+
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.flex-container>*{
+    flex: 1;
+    border: solid black 1px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+.flex-container > *:hover {
+    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+}
+
+.contact-item a{
+    color: #222;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+.contact-item a:hover {
+    color: darken($color: $primary-color, $amount: 30);
+    text-decoration: none;
+}
+
 .footer {
     text-align: center;
     color: #222;
@@ -334,6 +376,14 @@ p {
         width: 80%;
     }
 }
+
+@media (max-width: 780px) {
+    .contact-item{
+        flex: 1 100%;
+        margin: 10px 0;
+    }
+}
+
 @media (max-width: 590px) {
     .wrapper{
         display: block;
@@ -345,10 +395,7 @@ p {
     .clen article{
         text-align: justify;
     }
-}
-
-@media (max-width: 540px) {
-
+    
     #consent-popup img,
     #consent-popup h1 {
         display: none;
