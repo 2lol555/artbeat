@@ -246,7 +246,7 @@ p {
 
 .flex-container>*{
     flex: 1;
-    border: solid black 1px;
+
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -322,9 +322,12 @@ p {
     float: left;
     height: 120px;
     margin-right: 10px;
-
     border: $primary-color 3px solid;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 #consent-popup a {
@@ -395,7 +398,7 @@ p {
     .clen article{
         text-align: justify;
     }
-    
+
     #consent-popup img,
     #consent-popup h1 {
         display: none;
