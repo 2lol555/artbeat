@@ -298,7 +298,7 @@ p {
 }
 
 .contact-item a{
-    color: #222;
+    color: #fff;
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
@@ -307,7 +307,7 @@ p {
 }
 
 .contact-item a:hover {
-    color: darken($color: $primary-color, $amount: 30);
+    color: $primary-color;
     text-decoration: none;
 }
 
@@ -381,6 +381,30 @@ p {
 
 #suhlas-button {
     margin: 10px 0;
+}
+
+#kontakt{
+    background-color: #CDCDCD;
+    border-top: 2px #747779 solid;
+    color: white;
+
+    img{
+        width: 20%;
+
+        margin: 20px auto;
+    }
+}
+
+
+.lasthr{
+    border: white 10px solid;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 30%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 @media (max-width: 991px) {
