@@ -6,6 +6,8 @@
 # $ git config --global mergetool.keepBackup false
 *.orig
 
+
+
 # Created by git when using merge tools for conflicts
 *.BACKUP.*
 *.BASE.*
@@ -31,3 +33,4 @@
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,git
 
 css
+.idea*
