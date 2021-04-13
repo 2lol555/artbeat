@@ -1,12 +1,11 @@
 $primary-color: rgb(255, 0, 120);
 $sans-serif: 'Ubuntu', sans-serif;
+$light-blue: rgb(182, 228, 225);
 
 
-body, html {
-    margin: 0;
+body, html{
     overflow-x: hidden;
     font-style: $sans-serif;
-
 }
 
 .group:before, .group:after {
@@ -32,6 +31,10 @@ body, html {
     background: #ddd;
     color: #000;
     text-shadow: none;
+}
+
+.squeeze{
+    margin: auto;
 }
 
 .float-left {
@@ -96,12 +99,16 @@ body, html {
 
     img {
         margin-top: 150px;
-        max-width: 80vw;
         width: 80vw;
         max-width: 600px;
         max-height: 400px;
     }
 }
+
+article{
+    text-align: justify;
+}
+
 
 #o-nas {
     background-color: white;
@@ -155,12 +162,15 @@ p {
     font-family: $sans-serif;
 }
 
-.o-clenoch h2 {
-    text-align: center;
-}
-
 .o-clenoch{
     padding-top: 25px;
+    background-color: $light-blue;
+    text-align: center;
+    margin: auto;
+
+    h2 {
+        text-align: center;
+    }
 }
 
 .wrapper {
@@ -170,18 +180,17 @@ p {
 
 // Člen styling
 .clen {
-    border: white solid 5px;
-    margin: 0 auto 20px;
-    max-width: 920px;
+    border: transparent solid 5px;
+    margin: 0 20px 20px auto;
+    max-width: 600px;
     min-height: 300px;
     position: relative;
-    background-color: rgb(255, 220, 236);
+    background-color: #fff;
     border-radius: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    text-align: justify;
+    padding: 10px 25px;
+    text-align: center;
+    box-shadow: 0px 0px 8px;
+
 
     h3 {
         margin-top: 5px;
@@ -192,7 +201,7 @@ p {
 
     em {
         color: rgb(70, 70, 70);
-        margin-bottom: 0px;
+        margin-bottom: 0;
         font-style: normal;
     }
 
@@ -238,8 +247,8 @@ p {
 
     img {
         border-radius: 50%;
-        height: 200px;
-        width: 200px;
+        height: 250px;
+        width: 250px;
         position: relative;
         top: 10px;
         margin-bottom: 20px;
@@ -247,6 +256,10 @@ p {
     }
 
     transition: all 0.25s ease;
+}
+
+.clen:nth-child(2n){
+    margin: 0 auto 20px 20px;
 }
 
 .clen:hover,
@@ -264,10 +277,7 @@ p {
     flex-flow: row wrap;
 
     max-width: 760px;
-    margin: auto;
-
-    margin-bottom: 50px;
-    margin-top: 20px;
+    margin: 50px auto 20px auto;
 }
 
 .flex-container>*{
@@ -374,6 +384,14 @@ p {
 }
 
 @media (max-width: 991px) {
+    .clen{
+        min-width: 500px;
+        margin: 10px auto 20px;
+    }
+    .clen:nth-child(2n){
+        margin: 10px auto 20px;
+    }
+
     .logoheading {
         height: 70px;
         margin: 7px 0 10px 50px;
@@ -396,7 +414,6 @@ p {
     }
     .logomain {
         margin-top: 180px;
-        max-width: 80vw;
         width: 80vw;
         max-width: 600px;
         max-height: 400px;
@@ -418,6 +435,14 @@ p {
 }
 
 @media (max-width: 590px) {
+    .clen{
+        min-width: 300px;
+    }
+
+    .o-clenoch{
+        padding: 3px;
+    }
+
     .wrapper{
         display: block;
         width: 100%;
