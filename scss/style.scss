@@ -297,8 +297,10 @@ p {
     -o-transform: scale(1.04);
 }
 
-.contact-item a{
-    color: #fff;
+#kontakt a{
+    opacity: 0.75;
+
+    color: lighten($primary-color, 20);
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
@@ -306,7 +308,8 @@ p {
     -o-transition: all 0.2s ease;
 }
 
-.contact-item a:hover {
+#kontakt a:hover {
+    opacity: 1;
     color: $primary-color;
     text-decoration: none;
 }
@@ -314,6 +317,9 @@ p {
 .footer {
     text-align: center;
     color: #222;
+    p{
+        margin: 10px auto -5px;
+    }
 }
 
 .footerlink {
@@ -384,14 +390,12 @@ p {
 }
 
 #kontakt{
-    background-color: #CDCDCD;
-    border-top: 2px #747779 solid;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(163, 163, 163);
 
     img{
-        width: 20%;
-
-        margin: 20px auto;
+        margin: 10px auto -10px auto;
+        max-width: 200px;
     }
 }
 
@@ -448,13 +452,6 @@ p {
 
     #o-nas{
         padding: 20px;
-    }
-}
-
-@media (max-width: 780px) {
-    .contact-item{
-        flex: 1 100%;
-        margin: 10px 0;
     }
 }
 
