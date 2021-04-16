@@ -1,13 +1,9 @@
+//Variables
 $primary-color: rgb(255, 0, 120);
 $sans-serif: 'Ubuntu', sans-serif;
 $light-blue: #cdecff;
 
-
-body, html{
-    overflow-x: hidden;
-    font-style: $sans-serif;
-}
-
+// Grouping
 .group:before, .group:after {
     content: " ";
     display: table;
@@ -33,6 +29,9 @@ body, html{
     text-shadow: none;
 }
 
+
+
+//Form elements
 .squeeze{
     margin: auto;
 }
@@ -41,98 +40,48 @@ body, html{
     float: left;
 }
 
-.navigation {
-    background-color: rgba(0, 0, 0, 0.8);
-    position: fixed;
-    z-index: 500;
-    width: 100%;
-    height: 80px;
-    transition: top 0.3s;
-    top: 0;
+.clear {
+    clear: both;
 }
 
-.navlinks {
-    margin: 0 10px 0 10px;
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
 
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 300;
-    font-family: $sans-serif;
-    text-decoration: none;
-
-    display: inline;
-    text-transform: uppercase;
-
-    transition: all ease 0.2s;
+    max-width: 760px;
+    margin: 50px auto 20px auto;
 }
 
-.navlinks:hover {
-    color: $primary-color;
-    text-decoration: none;
+.flex-container>*{
+    flex: 1;
+    transition: scale 0.3s ease;
+    -webkit-transition: scale 0.3s ease;
+    -moz-transition: scale 0.3s ease;
+    -ms-transition: scale 0.3s ease;
+    -o-transition: scale 0.3s ease;
+}
+.flex-container > *:hover {
+    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
 }
 
-.navlink-div {
-    padding: 20px 0 0 0;
-    p {
-        color: $primary-color;
-    }
+.hidden {
+    display: none;
 }
 
-.logoheading {
-    height: 70px;
-    margin: 5px 0 30px 0;
-}
 
-.vlnovka-top {
-    margin: 10px 0 30px 0;
-    height: 60px;
-}
 
-.header {
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-    background-image: url('/img/bg.webp');
-    background-position: top, center;
-    background-attachment: fixed;
-    max-height: 750px;
-
-    img {
-        margin-top: 150px;
-        width: 80vw;
-        max-width: 600px;
-        max-height: 400px;
-    }
+//Elements
+body, html{
+    overflow-x: hidden;
+    font-style: $sans-serif;
 }
 
 article{
     text-align: justify;
-}
-
-
-#o-nas {
-    background-color: white;
-    padding-top: 30px;
-
-    max-width: 920px;
-    margin: auto;
-    text-align: justify;
-
-    p{
-        width: 100%;
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-
-    h3{
-        margin-bottom: 20px;
-        margin-top: 30px;
-        font-weight: 600;
-    }
-
-    em{
-        color: darken($color: $primary-color, $amount: 5);
-    }
 }
 
 hr {
@@ -156,27 +105,123 @@ h2 {
     text-transform: uppercase;
 }
 
+h3{
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-weight: 800;
+}
+
 p {
     width: 60%;
     margin: auto;
     font-family: $sans-serif;
 }
 
+
+
+
+//Classes
+.navigation {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 500;
+    width: 100%;
+    height: 80px;
+    transition: top 0.3s;
+    top: 0;
+
+    img:first-of-type{
+        height: 70px;
+        margin: 5px 0 30px 0;
+    }
+
+    img:last-of-type{
+        margin: 10px 0 30px 0;
+        height: 60px;
+    }
+}
+
+.navlink-div {
+    padding: 20px 0 0 0;
+    p {
+        color: $primary-color;
+    }
+}
+
+.navlinks {
+    margin: 0 10px 0 10px;
+
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: $sans-serif;
+    text-decoration: none;
+
+    display: inline;
+    text-transform: uppercase;
+
+    transition: all ease 0.2s;
+}
+
+.navlinks:hover {
+    color: $primary-color;
+    text-decoration: none;
+}
+
+.header {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-image: url('/img/bg.webp');
+    background-position: top, center;
+    background-attachment: fixed;
+    max-height: 750px;
+
+    img {
+        margin-top: 150px;
+        width: 80vw;
+        max-width: 600px;
+        max-height: 400px;
+    }
+}
+
+
+
+#o-nas {
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    max-width: 920px;
+    margin: auto;
+    text-align: justify;
+
+    p{
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+
+
+    em{
+        color: darken($color: $primary-color, $amount: 5);
+    }
+}
+
 .o-clenoch{
     padding-top: 25px;
+    padding-bottom: 30px;
     background-color: $light-blue;
     text-align: center;
     margin: auto;
 
-    h2 {
-        text-align: center;
-    }
+    
 }
 
 .wrapper {
     margin-right: 20px;
 }
-
 
 // Člen styling
 .clen {
@@ -267,36 +312,6 @@ p {
     transform: scale(1.02);
 }
 
-
-.clear {
-    clear: both;
-}
-
-.flex-container{
-    display: flex;
-    flex-flow: row wrap;
-
-    max-width: 760px;
-    margin: 50px auto 20px auto;
-}
-
-.flex-container>*{
-    flex: 1;
-
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-}
-.flex-container > *:hover {
-    transform: scale(1.04);
-    -webkit-transform: scale(1.04);
-    -moz-transform: scale(1.04);
-    -ms-transform: scale(1.04);
-    -o-transform: scale(1.04);
-}
-
 #kontakt a{
     opacity: 0.75;
 
@@ -347,7 +362,6 @@ p {
     margin-top: 10px;
 }
 
-
 #consent-popup p {
     margin: 0;
     width: 100%;
@@ -380,11 +394,6 @@ p {
     text-align: center;
 }
 
-
-.hidden {
-    display: none;
-}
-
 #suhlas-button {
     margin: 10px 0;
 }
@@ -397,18 +406,6 @@ p {
         margin: 10px auto -10px auto;
         max-width: 200px;
     }
-}
-
-
-.lasthr{
-    border: white 10px solid;
-    margin: 0 auto;
-    border-radius: 10px;
-    width: 30%;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 
 @media (max-width: 991px) {
