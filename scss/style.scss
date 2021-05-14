@@ -1,7 +1,10 @@
 //Variables
 $primary-color: rgb(255, 0, 120);
+$secondary-color: #B6E3FE;
 $sans-serif: 'Ubuntu', sans-serif;
-$light-blue: #cdecff;
+$dark-color: #1a1a1a;
+
+
 
 // Grouping
 .group:before, .group:after {
@@ -177,14 +180,20 @@ p {
     background-attachment: fixed;
     max-height: 750px;
 
+
     img {
         margin-top: 150px;
         width: 80vw;
         max-width: 600px;
         max-height: 400px;
-    }
 }
-
+}
+.darken{
+    background-color: rgba(0, 0, 0, 0.40);
+    width: 100vw;
+    height: 100vh;
+    max-height: 750px;
+}
 
 
 #o-nas {
@@ -212,11 +221,14 @@ p {
 .o-clenoch{
     padding-top: 25px;
     padding-bottom: 30px;
-    background-color: $light-blue;
+    background-color: $dark-color;
     text-align: center;
     margin: auto;
 
     
+    h2{
+        color: rgb(238, 238, 238);
+    }
 }
 
 .wrapper {
@@ -337,6 +349,19 @@ p {
     }
 }
 
+.hand{
+    right: -175px;
+    bottom: 30px;
+    position: relative;
+    margin: -100%;
+    transform: rot(-100deg);
+    -webkit-transform: rot(-100deg);
+    -moz-transform: rot(-100deg);
+    -ms-transform: rot(-100deg);
+    -o-transform: rot(-100deg);
+    height: 100px;
+}
+
 .footerlink {
     color: rgb(83, 83, 83);
 }
@@ -349,7 +374,7 @@ p {
     color: rgb(255, 255, 255);
 
     border-radius: 10px;
-    border: $primary-color 2px solid;
+    border: $secondary-color 0px solid;
     padding: 10px;
     background-color: transparentize($color: #000000, $amount: 0.2);
     position: fixed;
@@ -360,6 +385,7 @@ p {
     font-size: 0.8rem;
     margin-left: 10px;
     margin-top: 10px;
+    max-width: 550px;
 }
 
 #consent-popup p {
@@ -376,18 +402,12 @@ p {
 
 #consent-popup img {
     float: left;
-    height: 120px;
-    margin-right: 10px;
-    border: $primary-color 3px solid;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    height: 130px;;
+    margin: 0 13px 0 8px;
 }
 
 #consent-popup a {
-    color: $primary-color;
+    color: $secondary-color;
 }
 
 .consent-buttons {
@@ -396,7 +416,14 @@ p {
 
 #suhlas-button {
     margin: 10px 0;
+    background-color: $secondary-color;
+    border-color: aqua;
+    color: $dark-color;
 }
+#suhlas-button:focus {
+    box-shadow: aqua;
+}
+
 
 #kontakt{
     background-color: #ffffff;
@@ -459,6 +486,7 @@ p {
 
     .o-clenoch{
         padding: 3px;
+
     }
 
     .wrapper{
@@ -521,4 +549,8 @@ p {
         padding-right: 10px;
     }
 
+}
+
+.secondary-color{
+    color: $secondary-color;
 }
