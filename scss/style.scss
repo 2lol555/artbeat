@@ -153,17 +153,18 @@ p {
 
 .navlinks {
     margin: 0 10px 0 10px;
-
     color: white;
     font-size: 1.5rem;
     font-weight: 400;
     font-family: $sans-serif;
     text-decoration: none;
-
     display: inline;
     text-transform: uppercase;
-
-    transition: all ease 0.2s;
+    transition: color ease 0.2s;
+    -webkit-transition: color ease 0.2s;
+    -moz-transition: color ease 0.2s;
+    -ms-transition: color ease 0.2s;
+    -o-transition: color ease 0.2s;
 }
 
 .navlinks:hover {
@@ -210,12 +211,6 @@ p {
         font-size: 1rem;
         line-height: 1.5rem;
     }
-
-
-
-    em{
-        color: darken($color: $primary-color, $amount: 5);
-    }
 }
 
 .o-clenoch{
@@ -224,10 +219,14 @@ p {
     background-color: $dark-color;
     text-align: center;
     margin: auto;
-
     
     h2{
         color: rgb(238, 238, 238);
+    }
+
+    .squeeze{    
+        margin: auto;
+        max-width: 80%;
     }
 }
 
@@ -391,6 +390,10 @@ p {
 #consent-popup p {
     margin: 0;
     width: 100%;
+    
+    em{
+        color: $secondary-color;
+    }
 }
 
 #consent-popup h1 {
@@ -436,7 +439,18 @@ p {
 }
 
 @media (max-width: 991px) {
+    .navigation {
+        img:first-of-type{
+            margin: 5px 0 12px 0;
+        }
+
+        img:last-of-type{
+            margin: 10px 0 12px 0;
+        }
+    }
+
     .clen{
+        width: 80%;
         min-width: 500px;
         margin: 10px auto 20px;
     }
@@ -456,14 +470,12 @@ p {
         height: 140px;
         text-align: center;
     }
-    .navlink-div {
-        padding: 5px 0 0 0;
-    }
-    .navlinks {
-        font-size: 1.3rem;
-        margin: 0 3px 0 3px;
-        font-weight: 200;
-    }
+    .navlink-div{
+        padding: 10px 0 0 0;
+        a,p{
+            font-size: 1.3rem;
+        }
+    } 
     .logomain {
         margin-top: 180px;
         width: 80vw;
@@ -480,13 +492,29 @@ p {
 }
 
 @media (max-width: 590px) {
+    .navigation {
+        height: 130px;
+        text-align: center;
+    }
+    .navlink-div {
+        padding: 5px 0 0 0;
+    }
+    .navlinks {
+        font-size: 0.94rem;
+        margin: 0 2px 0 2px;
+        font-weight: 100;
+    }
     .clen{
         min-width: 300px;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
     }
 
     .o-clenoch{
         padding: 3px;
-
     }
 
     .wrapper{
@@ -513,9 +541,22 @@ p {
         font-size: 1rem;
         margin-bottom: 1rem;
     }
+
+    .o-clenoch{
+        .squeeze{    
+            margin: auto;
+            max-width: 95%;
+        }
+    }
 }
 
 @media (max-width: 480px) {
+    .navlink-div{
+        margin: 0 0 0 2px;
+        a,p{
+            font-size: 0.94rem;
+        }
+    } 
     .logoheading {
         margin: 7px 0 10px 30px;
     }
@@ -523,18 +564,7 @@ p {
         margin: 7px 30px 10px 0;
         height: 60px;
     }
-    .navigation {
-        height: 125px;
-        text-align: center;
-    }
-    .navlink-div {
-        padding: 5px 0 0 0;
-    }
-    .navlinks {
-        font-size: 0.94rem;
-        margin: 0 0 0 0;
-        font-weight: 400;
-    }
+
     h2 {
         font-size: 2rem;
         text-align: center;
