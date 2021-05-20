@@ -353,11 +353,7 @@ p {
     bottom: 30px;
     position: relative;
     margin: -100%;
-    transform: rot(-100deg);
-    -webkit-transform: rot(-100deg);
-    -moz-transform: rot(-100deg);
-    -ms-transform: rot(-100deg);
-    -o-transform: rot(-100deg);
+    transform: rotate(-100deg);
     height: 100px;
 }
 
@@ -373,7 +369,7 @@ p {
     color: rgb(255, 255, 255);
 
     border-radius: 10px;
-    border: $secondary-color 0px solid;
+    border: $secondary-color 0 solid;
     padding: 10px;
     background-color: transparentize($color: #000000, $amount: 0.2);
     position: fixed;
