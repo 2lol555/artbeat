@@ -36,7 +36,7 @@ window.onload = () => {
     if(shouldShowConsent()) {
         setTimeout(() => {
             consentPopup.classList.remove('hidden');
-        }, 500);
+        }, 100);
     }else{
         dataLayer.push({'event': 'accepted'});
     }
