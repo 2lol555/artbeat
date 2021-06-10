@@ -342,10 +342,38 @@ p {
 }
 
 .footer {
-    text-align: center;
-    color: #222;
+    color: #fff;
+
+    border-top: white 2px solid;
+
+    background: rgb(1,0,74);
+    //background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(1,0,74,1) 50%);
+
+    img{
+        margin: 10px 0 10px 7.9%;
+    }
     p{
         margin: 10px auto -5px;
+    }
+    .link-box{
+        padding: 35px 7.9% 0 0;
+        font-family: "Ubuntu", sans-serif;
+        float: right;
+        ul{
+
+            list-style: none;
+            padding: 0;
+            li{
+                line-height: 1.2rem;
+                h4 {
+                    font-size: 1rem;
+                    font-weight: 900;
+                }
+            }
+        }
+        //*{
+        //    border: white 1px solid;
+        //}
     }
 }
 
@@ -359,11 +387,12 @@ p {
 }
 
 .footerlink {
-    color: rgb(83, 83, 83);
+    color: white;
 }
 
 .footerlink:hover {
-    color: #222;
+    color: #ddd;
+    text-decoration: none;
 }
 
 #consent-popup {
