@@ -510,6 +510,39 @@ p {
     #o-nas{
         padding: 20px;
     }
+
+    .footer{
+        padding-bottom: 30px;
+        .center{
+            margin: auto;
+            width: 320px;
+        }
+        img{
+            text-align: center;
+            float: none;
+            margin-bottom: -30px;
+        }
+        .link-box{
+            display: block;
+            width: 80%;
+            margin: auto;
+            float: none;
+
+            ul{
+                margin: auto;
+                display: block;
+                list-style: none;
+                padding: 0;
+                li{
+                    line-height: 1.2rem;
+                    h4 {
+                        font-size: 1rem;
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 590px) {
