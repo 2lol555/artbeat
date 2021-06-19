@@ -34,3 +34,6 @@
 
 css
 .idea*
+
+_site*
+.jekyll-cache*
