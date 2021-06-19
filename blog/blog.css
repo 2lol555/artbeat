@@ -49,6 +49,21 @@
     font-weight: 200;
 
 }
+.archiv{
+    padding: 10px;
+}
+.archiv h6{
+    display: inline-block;
+    padding: 0;
+}
+.archiv p{
+    display: inline-block;
+    width: auto;
+    margin-bottom: 20px;
+}
+.archiv a{
+    color: #C7025B;
+}
 
 @media (max-width: 991px) {
     #blog{
