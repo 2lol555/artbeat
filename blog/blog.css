@@ -1,0 +1,54 @@
+#blog{
+    padding: 100px 0 0 0;
+    min-height: 90vh;
+}
+
+.prispevok p{
+    margin: 0;
+    width: 100%;
+}
+
+.prispevok a{
+    color: #C7025B;
+}
+
+.prispevok{
+    background: #B7E4FF;
+    padding: 20px;
+    border: #01004a 1px solid;
+    margin-bottom: 30px;
+}
+
+.squeeze{
+    width: 80%;
+    margin: auto;
+}
+
+.autor-info img{
+    border-radius: 50%;
+}
+.autor-info p{
+    display: inline-block;
+    width: 70%;
+    font-weight: bold;
+
+    padding-bottom: 30px;
+    padding-left: 10px;
+}
+
+.metadata{
+    color: dimgrey;
+    font-size: 0.9rem;
+    padding-top: 20px;
+    font-weight: 200;
+
+}
+
+@media (max-width: 991px) {
+    #blog{
+        padding: 160px;
+    }
+    .squeeze{
+        width: 100%;
+    }
+}
