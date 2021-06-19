@@ -6,6 +6,10 @@ $body-sans: 'Libre Franklin', sans-serif;
 $dark-color: #1a1a1a;
 
 
+h1,h2,h3,h4,h5,h6{
+    font-family: $heading-font;
+}
+
 
 // Grouping
 .group:before, .group:after {
@@ -104,7 +108,6 @@ h2 {
     padding-bottom: 20px;
     padding-top: 5px;
     text-align: center;
-    font-family: $heading-font;
     text-transform: uppercase;
 }
 
@@ -492,7 +495,7 @@ p {
         text-align: center;
     }
     .navlink-div{
-        padding: 10px 0 0 0;
+        padding: 10px 100px 0 100px;
         a,p{
             font-size: 1.3rem;
         }
@@ -551,7 +554,7 @@ p {
         text-align: center;
     }
     .navlink-div {
-        padding: 5px 0 0 0;
+        padding: 5px 40px 0 40px;
     }
     .navlinks {
         font-size: 0.94rem;
