@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sk" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+<!--		TODO: ADD A TITLE-->
+		<title>{{page.title}}</title>
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- GOOGLE FONTS !-->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Libre+Franklin:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+		<!-- Anton, Libre Franklin !-->
+
+	</head>
+	<body>
+		<header class="navigation-bar">
+			<a href="/blog"><img src="/img/logotext.webp" alt="logo"></a>
+		</header>
+		<main>
+			<article>
+				<header class="post-header">
+					<h1 class="post-title">{{page.title | upcase}}</h1>
+					<p class="post-meta">
+						<!--		TODO: ADD AUTHOR + DATE -->
+						Napísal <a href="#" class="author">{{page.author}}</a> <time>{{page.date}}</time>
+					</p>
+				</header>
+				<div class="post-content">
+					{{ content }}
+				</div>
+				<!--		TODO: ADD INFO TO FOOTER-->
+<!--				<footer class="post-footer">-->
+<!--					<h3>O autorovi</h3>-->
+<!--					<div class="byline">-->
+<!--						<a href="#" class="photo">-->
+<!--							<img src="https://via.placeholder.com/120" height="120" alt="Profilová fotka autora">-->
+<!--						</a>-->
+<!--						<h3>-->
+<!--							<a href="#">Admin Administratívny</a>-->
+<!--						</h3>-->
+<!--						<div class="bio">-->
+<!--							<p>-->
+<!--								Admin administratívny icing <strong>jelly-o topping</strong> topping donut muffin ice cream I love caramels. <a href="#">Cheesecake candy canes.</a> I love icing. Wafer biscuit jelly beans. Cookie ice cream pastry powder. Sesame snaps sesame snaps brownie dragée chocolate cake. Pudding dessert croissant candy.-->
+<!--							</p>-->
+<!--						</div>-->
+
+<!--					</div>-->
+<!--				</footer>-->
+			</article>
+		</main>
+
+		<footer class="global-footer">
+			Made with love
+			&nbsp;&nbsp;
+			&copy; ArtBeat 2021
+		</footer>
+
+	</body>
+</html>
