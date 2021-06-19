@@ -3,6 +3,12 @@
     min-height: 90vh;
 }
 
+.nothing-here{
+    color: #a3a3a3;
+    padding-top: 50px;
+    text-align: center;
+}
+
 .prispevok p{
     margin: 0;
     width: 100%;
