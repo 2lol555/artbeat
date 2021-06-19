@@ -7,6 +7,10 @@
 *.orig
 
 
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 
 # Created by git when using merge tools for conflicts
 *.BACKUP.*
@@ -34,6 +38,3 @@
 
 css
 .idea*
-
-_site*
-.jekyll-cache*
