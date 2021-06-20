@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="sk" dir="ltr">
 
@@ -100,30 +103,30 @@
         <div class="squeeze">
             <h2>Blog</h2>
             <h3>Najnovšie príspevky</h3>
-<!--            TODO: vymazať tento heading keď pridáme prvý článok-->
-            <h5 class="nothing-here">Zatiaľ tu nič nie je...</h5>
-<!--            <section class="prispevok">-->
-<!--                <div class="autor-info">-->
-<!--                    <img src="https://via.placeholder.com/50" alt="Profilová fotka">-->
-<!--                    <p>Adam Príkladný</p>-->
-<!--                </div>-->
-<!--                <h4><a href="#">Názov ipsum sit dolor amet</a></h4>-->
-<!--                <h5>Tagline Chupa chups icing ice cream I love chocolate cake carrot cake pie oat cake. I love cake ice cream wafer oat cake topping soufflé carrot cake. Bonbon pie apple pie tootsie roll.</h5>-->
-<!--                <p>Ice cream cupcake sesame snaps wafer. Pastry soufflé bear claw I love macaroon. I love powder cookie croissant I love. Tootsie roll wafer chocolate pudding fruitcake jujubes. Brownie tootsie roll wafer marshmallow cake cheesecake. Carrot cake bear claw topping I love danish gummi bears sweet. I love dragée topping. Marshmallow gingerbread soufflé bonbon sweet pastry topping I love. Gingerbread gummi bears chocolate cake muffin bear claw candy cheesecake.</p>-->
-<!--                <p class="metadata">01.01.2021</p>-->
-<!--            </section>-->
+            {% for post in site.posts limit:3 %}
+                <section class="prispevok">
+                    <div class="autor-info">
+                        <img src="{{ post.author-profile }}" alt="Profilová fotka">
+                        <p>{{ post.author }}</p>
+                    </div>
+                    <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                    <h5>{{post.perex}}</h5>
+                    <p>{{post.content | truncatewords: 50}}</p>
+                    <p class="metadata">{{ post.date | date: "%d.%m.%Y" }} · {{ post.author }}</p>
+                </section>
+            {% endfor %}
             <hr>
             <div class="archiv">
-                <h3>Archív príspevkov</h3>
-                <!--            TODO: vymazať tento heading keď pridáme prvý archivovaný článok-->
-                <h5 class="nothing-here">Zatiaľ tu nič nie je...</h5>
-<!--                <h5>Mesiac 2021</h5>-->
-<!--                <article class="archivovany-prispevok">-->
-<!--                    <a href="#">-->
-<!--                        <h6>Príklad názvu príspevku</h6>-->
-<!--                    </a>-->
-<!--                        <p>01.01.2021 · Adam Príkladný</p>-->
-<!--                </article>-->
+                <h3>Archív</h3>
+                {% for post in site.posts offset:3 %}
+                    <a href=""></a>
+                    <article class="archivovany-prispevok">
+                        <a href="{{ post.url }}">
+                            <h6>{{ post.title }} </h6>
+                        </a>
+                            <p>{{ post.date | date: "%d.%m.%Y" }} · {{ post.author }}</p>
+                    </article>
+                {% endfor %}
             </div>
         </div>
     </div>

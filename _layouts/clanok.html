@@ -2,9 +2,8 @@
 <html lang="sk" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-<!--		TODO: ADD A TITLE-->
 		<title>{{page.title}}</title>
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="/css/clanok.css">
 
 		<!-- GOOGLE FONTS !-->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -40,11 +39,30 @@
 				<header class="post-header">
 					<h1 class="post-title">{{page.title | upcase}}</h1>
 					<p class="post-meta">
-						<!--		TODO: ADD AUTHOR + DATE -->
-						Napísal <a href="#" class="author">{{page.author}}</a> <time>{{page.date}}</time>
+						Napísal <a class="author">{{page.author}}</a>
+						<time>
+							{% assign m = page.date | date: "%-m" %}
+							{{ page.date | date: "%-d" }}
+							{% case m %}
+							{% when '1' %}Jan
+							{% when '2' %}Február
+							{% when '3' %}Marec
+							{% when '4' %}Apríl
+							{% when '5' %}Máj
+							{% when '6' %}Jún
+							{% when '7' %}Júl
+							{% when '8' %}August
+							{% when '9' %}September
+							{% when '10' %}Október
+							{% when '11' %}November
+							{% when '12' %}December
+							{% endcase %}
+							{{ page.date | date: "%Y" }}
+						</time>
 					</p>
 				</header>
 				<div class="post-content">
+					<p>{{ page.perex }}<p>
 					{{ content }}
 				</div>
 				<!--		TODO: ADD INFO TO FOOTER-->
