@@ -8,6 +8,11 @@
     padding-top: 50px;
     text-align: center;
 }
+.thumbnail{
+    height: 175px;
+    float: left;
+    margin: 0 10px 0 0;
+}
 
 .prispevok p{
     margin: 0;
@@ -74,6 +79,12 @@
     }
     h3{
         text-align: center;
+    }
+    .thumbnail{
+        display: block;
+        width: auto;
+        float: none;
+        margin: auto;
     }
 }
 @media (max-width: 800px) {

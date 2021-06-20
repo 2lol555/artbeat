@@ -106,9 +106,10 @@
             {% for post in site.posts limit:3 %}
                 <section class="prispevok">
                     <div class="autor-info">
-                        <img src="{{ post.author-profile }}" alt="Profilová fotka" height="50px">
+                        <img src="{{ post.author-profile }}" alt="Profilová fotka" height="50px" style="border: #C7025B solid 1px">
                         <p>{{ post.author }}</p>
                     </div>
+                    <img src="{{ post.img }}" class="thumbnail">
                     <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
                     <h5>{{post.perex}}</h5>
                     <p>{{post.content | truncatewords: 50}}</p>
