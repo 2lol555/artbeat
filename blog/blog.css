@@ -11,7 +11,7 @@
 .thumbnail{
     height: 175px;
     float: left;
-    margin: 0 10px 0 0;
+    margin: 0 10px 5px 0;
 }
 
 .prispevok p{
@@ -82,9 +82,10 @@
     }
     .thumbnail{
         display: block;
-        width: auto;
+        width: 100%;
+        height: auto;
         float: none;
-        margin: auto;
+        margin: 0 auto 10px auto;
     }
 }
 @media (max-width: 800px) {
