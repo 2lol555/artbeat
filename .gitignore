@@ -36,5 +36,7 @@ _site/
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,git
 
-css
+css/gdprstyle.*
+css/normalize.*
+css/style.*
 .idea*
