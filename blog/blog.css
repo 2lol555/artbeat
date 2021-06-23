@@ -82,7 +82,8 @@
     }
     .thumbnail{
         display: block;
-        width: 100%;
+        max-height: 60vh;
+        max-width: 100%;
         height: auto;
         float: none;
         margin: 0 auto 10px auto;
