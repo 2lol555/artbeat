@@ -64,10 +64,26 @@
 .archiv p{
     display: inline-block;
     width: auto;
-    margin-bottom: 20px;
 }
 .archiv a{
     color: #C7025B;
+}
+
+.archive-piece{
+    padding: 5px;
+    margin-top: 3px;
+    border-bottom: black dotted 3px;
+}
+
+.archive-piece:last-of-type{
+    border-bottom: none;
+}
+
+.archive-piece:hover,
+.archive-piece:focus{
+    transform: scale(1.02);
+
+    transition: scale 0.3s ease;
 }
 
 @media (max-width: 991px) {

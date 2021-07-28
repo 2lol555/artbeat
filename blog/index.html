@@ -126,13 +126,16 @@
                 <script async src="https://cse.google.com/cse.js?cx=9529add4b55bab129"></script>
                 <div class="gcse-search"></div>
                 {% for post in site.posts offset:3 %}
+                <div class="archive-piece">
                     <a href=""></a>
                     <article class="archivovany-prispevok">
                         <a href="{{ post.url }}">
                             <h6>{{ post.title }} </h6>
                         </a>
-                            <p>{{ post.date | date: "%d.%m.%Y" }} · {{ post.author }}</p>
+                        <p>{{ post.date | date: "%d.%m.%Y" }} · {{ post.author }}</p>
                     </article>
+                </div>
+
                 {% endfor %}
             </div>
         </div>
