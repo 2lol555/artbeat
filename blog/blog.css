@@ -14,20 +14,44 @@
     margin: 0 10px 5px 0;
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
 .prispevok p{
     margin: 0;
     width: 100%;
 }
 
 .prispevok a{
-    color: #C7025B;
+    color: #ff328e;
 }
 
 .prispevok{
-    background: #e8f4f7;
+    color: white;
+    background: #212529;
     padding: 20px;
-    border: #01004a 1px solid;
+    border: #ff328e 2px solid;
+    border-radius: 10px;
     margin-bottom: 30px;
+}
+
+.prispevok img{
+    border: #ffe4f4 2px solid;
+    display: inline-block;
+
+    transition: all ease 0.3s;
+}
+
+.prispevok img:hover{
+    border: #ff328e 2px solid;
+
+    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
 }
 
 .squeeze{
@@ -37,6 +61,8 @@
 
 .autor-info img{
     border-radius: 50%;
+    border: #ff328e 2px solid;
+    width: 1px;
 }
 .autor-info p{
     display: inline-block;
@@ -48,7 +74,7 @@
 }
 
 .metadata{
-    color: dimgrey;
+    color: #c4c4c4;
     font-size: 0.9rem;
     padding-top: 20px;
     font-weight: 200;
@@ -56,6 +82,7 @@
 }
 .archiv{
     padding: 10px 0 0 0;
+
 }
 .archiv h6{
     display: inline-block;
