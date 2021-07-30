@@ -39,7 +39,6 @@ h1, h2, h3, h4, h5, h6{
 
 .prispevok img{
     border: #ffe4f4 2px solid;
-    display: inline-block;
 
     transition: all ease 0.3s;
 }
