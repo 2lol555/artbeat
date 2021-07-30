@@ -6,7 +6,7 @@ body{
 }
 
 .squeeze{
-	max-width: 960px;
+	max-width: 75%;
 	margin: 0 auto;
 	padding: 0 20px 0 20px;
 }
@@ -17,11 +17,6 @@ body{
 h1,h2,h3{
 	font-weight: 800;
 	font-family: 'Nunito', sans-serif;
-}
-
-h1{
-	/*TODO Add line height*/
-	/*line-height: ;*/
 }
 
 a{
@@ -257,6 +252,10 @@ q{
 		margin-left: 10px;
 		margin-right: 10px;
 	}
+
+	.squeeze {
+		max-width: 90%;
+	}
 }
 @media (max-width: 600px) {
 	.post-title{
@@ -272,5 +271,6 @@ q{
 	.squeeze{
 		margin: 0 auto;
 		padding: 0 10px 0 10px;
+		max-width: 100%;
 	}
 }
