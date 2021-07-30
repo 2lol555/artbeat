@@ -7,7 +7,11 @@ const cookieStorage = {
         return cookies[key];
     },
     setItem: (key, value) => {
-        document.cookie = `${key}=${value}; path=/`
+        var now = new Date();
+        var time = now.getTime();
+        var expireTime = time + 1000*36000;
+        now.setTime(expireTime);
+        document.cookie = `${key}=${value};max-age=63072000;path=/`;
     }
 }
 
