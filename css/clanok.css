@@ -35,7 +35,7 @@ a:hover, a:focus{
 p{
 	margin: 0 0 24px;
 	text-align: justify;
-	width: 100%;
+	width: auto;
 }
 .navigation-bar{
 	background: #222222;
