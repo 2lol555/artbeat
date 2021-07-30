@@ -4,7 +4,6 @@
     <p id="consent-agreement">
         Pre správne fungovanie stránky potrebujeme tvoj súhlas so spracovaním osobných údajov.<br>Kliknutím na tlačidlo „<em>Súhlasím“</em> súhlasíš s ich spracovaním v rozsahu, o ktorom si viac prečítaš v sekcii <a href="gdpr.html" class="secondary-color"><strong>Ochrana osobných údajov</strong></a>.
     </p>
-
     <div class="consent-buttons">
         <button id="suhlas-button" type="button" class="btn btn-success btn-sm"> Súhlasím</button>
         <button id="nesuhlas-button" type="button" class="btn btn-secondary btn-sm">Nesúhlasím</button>
@@ -13,12 +12,9 @@
 
 <script>
     const myList = ["Ham!", "Mňam!", "Chrum!", "Hryz!", "Mňamí", "Mmm!", "Óóó!", "Yummy!"];
-
     randomizeFunction()
-
     function randomizeFunction() {
         var word = myList[Math.floor(Math.random() * myList.length)];
-
         document.getElementById("suhlas-button").innerHTML = word;
         document.getElementById("consent-agreement").innerHTML = document.getElementById("consent-agreement").innerHTML.replace("Súhlasím", word);
     }
