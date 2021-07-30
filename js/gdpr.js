@@ -7,7 +7,7 @@ const cookieStorage = {
         return cookies[key];
     },
     setItem: (key, value) => {
-        document.cookie = `${key}=${value}`
+        document.cookie = `${key}=${value}; path=/`
     }
 }
 
