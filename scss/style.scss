@@ -176,6 +176,8 @@ p {
     text-decoration: none;
 }
 
+.navlinks:focus:not(:focus-visible) { outline: none }
+
 .header {
     width: 100vw;
     height: 100vh;
