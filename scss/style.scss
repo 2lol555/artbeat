@@ -37,8 +37,6 @@ h1,h2,h3,h4,h5,h6{
     text-shadow: none;
 }
 
-
-
 //Form elements
 .squeeze{
     margin: auto;
@@ -462,6 +460,47 @@ p {
         margin: 10px auto -10px auto;
         max-width: 200px;
     }
+}
+
+#mainlogo{
+    max-width: 75%;
+    margin: auto;
+    display: flex;
+}
+
+#hero{
+    text-align: center;
+}
+
+.prispevok{
+    text-align: justify;
+    a{
+        text-decoration: none;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+}
+
+.dark-bg{
+    background: #000000;
+}
+
+.main-button{
+    border: #a00044 1px solid;
+    border-radius: 10px;
+    padding: 3px;
+    margin-bottom: 10px;
+
+    background: #C7025B;
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.prispevok{
+    margin-top: 10px;
 }
 
 @media (max-width: 991px) {

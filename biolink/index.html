@@ -11,53 +11,33 @@
 
   <title>ArtBeat click capture</title>
 
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/blog/blog.css">
 
 
   <!--Icon Data-->
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicon/apple-touch-icon-72x72.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon/apple-touch-icon-144x144.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png" />
-  <link rel="icon" type="image/png" href="/img/favicon/favicon-196x196.png" sizes="196x196" />
-  <link rel="icon" type="image/png" href="/img/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16" />
-  <link rel="icon" type="image/png" href="/img/favicon/favicon-128.png" sizes="128x128" />
-  <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png" />
-  <meta name="msapplication-square70x70logo" content="/img/favicon/mstile-70x70.png" />
-  <meta name="msapplication-square150x150logo" content="/img/favicon/mstile-150x150.png" />
-  <meta name="msapplication-wide310x150logo" content="/img/favicon/mstile-310x150.png" />
-  <meta name="msapplication-square310x310logo" content="/img/favicon/mstile-310x310.png" />
+  {% include icons.html %}
 
   <!-- FONT AWESOME !-->
   <script src="https://kit.fontawesome.com/0b9d1071cf.js" crossorigin="anonymous"></script>
 
-  <!-- GOOGLE FONTS !-->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Libre+Franklin:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
-  <!-- Anton, Libre Franklin !-->
+  {% include fonts.html %}
 
-  <!--js load-->
-  <script src="/js/gdpr.js" defer></script>
+  {% include js_load.html %}
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!=='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PF85LLX');</script>
-  <!-- End Google Tag Manager -->
-
+  <script>
+    if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+    } else {
+      window.location.assign("http://www.artbeat.sk");
+    }
+  </script>
 </head>
-<body>
+<body class="dark-bg">
   <script>0</script>
-  <a href="/index.html"><img id="mainlogo" src="/img/logotext.webp"></a>
+
+  {% include google_tag_manager_body.html %}
+
+  <a href="/index.html"><img id="mainlogo" src="/img/logotext_2.webp"></a>
   <div id="hero">
     <div id="blog-or-page">
       <a class="main-button" href="/">Hlavná stránka</a>
