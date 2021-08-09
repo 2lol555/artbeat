@@ -2,7 +2,7 @@
 layout: clanok
 title: Psychológia hudby – ako súvisí tvoj hudobný vkus s osobnosťou?
 author: Ema Nagyová
-author-profile: /img/samo.webp
+author-profile: /img/emka.webp
 img: /img/blog/0015/cover.webp
 perex: Preferovaný hudobný žáner o tebe napovie viac, než si myslíš.
 ---
