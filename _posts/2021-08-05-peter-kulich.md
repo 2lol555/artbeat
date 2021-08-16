@@ -4,7 +4,7 @@ title: Peter Kulich vydal svoj prvý videoklip
 author: Rebeka Penciaková
 author-profile: https://via.placeholder.com/500
 img: /img/blog/SI0001/cover.webp
-perex: Nepochádza z umeleckej rodiny, no aj napriek tomu vytvoril unikátne umelecké dielo
+perex: Nepochádza z umeleckej rodiny, no aj napriek tomu vytvoril unikátne umelecké dielo.
 ---
 
 Peter Kulich je 30-ročný spevák, gitarista, skladateľ a textár zo Žiliny. Hudbe sa venuje od svojich 16-tich rokov, no už za tento relatívne krátky čas stihol vystriedať množstvo hudobných kolegov a hracích príležitostí. Pôsobil v speváckom zbore Omnia, rockovej kapele Best Zeroes a bol súčasťou viacerých akustických zoskupení. Za zmienku stojí aj duo P&P v spolupráci s cajonistom Michalom Komorovským, s ktorým hrá dodnes. Práve s ním sa venujú hraniu prevzatých aj vlastných skladieb v štýle pop-rock a art-rock.
