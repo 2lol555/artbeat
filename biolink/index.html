@@ -60,11 +60,14 @@
   <script>
     window.addEventListener("load", function(){
       const myLoader = document.getElementById("Loader");
-      myLoader.classList.add("opacity0");
+      setTimeout(function() {
+        myLoader.classList.add("opacity0");
+      }, 750);
+
 
       setTimeout(function() {
         myLoader.classList.add("hidden");
-      }, 1000);
+      }, 1500);
 
     })
 
