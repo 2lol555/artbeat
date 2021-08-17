@@ -75,22 +75,32 @@
 
   <a href="/index.html"><img id="mainlogo" src="/img/logotext_2.webp"></a>
   <div id="hero">
-    <div id="blog-or-page">
+    <div class="blog-or-page">
       <a class="main-button" href="/">Hlavná stránka</a>
       <a class="main-button" href="/blog">Blog</a>
     </div>
 
-    {% for post in site.posts limit:3 %}
-    <section class="prispevok">
-      <a href="{{ post.url }}">
-        <img src="{{ post.img }}" class="thumbnail">
-      </a>
-      <h3>{{post.perex}}</h3>
-      <a href="{{ post.url }}"><strong>Čítať viac</strong></a>
-    </section>
-    {% endfor %}
-
+    <div class="ig-grid">
+      {% for post in site.posts limit:1 %}
+      <div class="bigpost">
+        <a href="{{ post.url }}">
+          <img src="{{ post.img }}" class="thumbnail">
+        </a>
+      </div>
+      {% endfor %}
+      <div class="group">
+        {% for post in site.posts limit:9 offset:1 %}
+        <a href="{{ post.url }}">
+          <img src="{{ post.img }}" class="thumbnail">
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    <div>
+      <a class="main-button" href="/blog#archiv">Archív článkov</a>
+    </div>
   </div>
+
 
   {% include gdpr.html %}
 </body>

@@ -1,3 +1,9 @@
+body{
+    margin: 0;
+    overflow: hidden;
+
+}
+
 #blog{
     padding: 100px 0 0 0;
     min-height: 90vh;
@@ -31,7 +37,7 @@ h1, h2, h3, h4, h5, h6{
 .prispevok{
     color: white;
     background: #212529;
-    padding: 20px;
+    padding: 12px;
     border: #ff328e 2px solid;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -51,6 +57,37 @@ h1, h2, h3, h4, h5, h6{
     -moz-transform: scale(1.04);
     -ms-transform: scale(1.04);
     -o-transform: scale(1.04);
+}
+
+.ig-grid{
+    margin: 10px 0 10px;
+}
+
+.ig-grid img{
+    border: #ffe4f4 2px solid;
+
+    max-width: 31%;
+    float: left;
+    margin: 0.5%;
+
+    transition: all ease 0.3s;
+}
+
+.ig-grid img:hover{
+    border: #ff328e 2px solid;
+
+    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+}
+
+.bigpost img{
+    max-width: 95%;
+    float: none;
+    margin: auto;
+    margin-bottom: 5px;
 }
 
 .squeeze{
