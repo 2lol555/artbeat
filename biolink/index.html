@@ -84,12 +84,12 @@
       {% for post in site.posts limit:1 %}
       <div class="bigpost">
         <a href="{{ post.url }}">
-          <img src="{{ post.img }}" class="thumbnail">
+          <img src="{{ post.img }}" class="thumbnail" alt="{{ post.title }}">
         </a>
       </div>
       {% endfor %}
       <div class="group">
-        {% for post in site.posts limit:9 offset:1 %}
+        {% for post in site.posts limit:3 offset:1 %}
         <a href="{{ post.url }}">
           <img src="{{ post.img }}" class="thumbnail">
         </a>
