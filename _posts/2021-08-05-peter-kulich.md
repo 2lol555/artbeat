@@ -2,7 +2,7 @@
 layout: clanok
 title: Peter Kulich vydal svoj prvý videoklip
 author: Rebeka Penciaková
-author-profile: https://via.placeholder.com/500
+author-profile: /img/rebeka.webp
 img: /img/blog/SI0001/cover.webp
 perex: Nepochádza z umeleckej rodiny, no aj napriek tomu vytvoril unikátne umelecké dielo.
 ---

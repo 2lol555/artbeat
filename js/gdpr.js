@@ -28,10 +28,18 @@ window.onload = () => {
     const acceptFn = event => {
         saveToStorage(storageType);
         consentPopup.classList.add("hidden");
-        dataLayer.push({'event': 'accepted'});
+        fireEvents();
     }
     const declineFn = event => {
         consentPopup.classList.add("hidden");
+    }
+
+    function fireEvents() {
+        dataLayer.push({'event': 'accepted'});
+
+        if (window.location.href.includes("artbeat.sk/20")){
+            dataLayer.push({'event': 'article'});
+        }
     }
 
     acceptBtn.addEventListener("click", acceptFn);
@@ -42,6 +50,6 @@ window.onload = () => {
             consentPopup.classList.remove('hidden');
         }, 100);
     }else{
-        dataLayer.push({'event': 'accepted'});
+        fireEvents();
     }
 };

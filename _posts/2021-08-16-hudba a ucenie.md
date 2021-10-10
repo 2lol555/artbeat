@@ -2,7 +2,7 @@
 layout: clanok
 title: Počúvanie hudby pri učení – pomôže alebo uškodí?
 author: Boglárka Püšpökyová
-author-profile: https://via.placeholder.com/500
+author-profile: /img/bogi.webp
 img: /img/blog/0022/cover.webp
 perex: Ovplyvňuje počúvanie hudby tvoje študijné výsledky?
 ---
